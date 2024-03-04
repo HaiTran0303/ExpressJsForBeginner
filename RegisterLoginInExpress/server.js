@@ -39,7 +39,7 @@ app.post('/login', (req, res, next) => {
   var username = req.body.username
   var password = req.body.password
 
-  AccountModel.findOne({
+  AccountModel.findOne({  
     username: username,
     password: password
   })
